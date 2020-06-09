@@ -100,8 +100,10 @@ auto Engine::Application::start(const std::string_view &title) -> void
     deinit();
 }
 
-auto Engine::Application::drawFps() const -> void
+auto Engine::Application::drawFps() -> void
 {
+    m_fps_draw.setString(std::to_string(m_fps));
+    m_window.draw(m_fps_draw);
 }
 
 // TODO: Preserve zoom and camera position on window resize
