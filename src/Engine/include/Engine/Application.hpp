@@ -66,14 +66,18 @@ public:
     virtual auto draw() -> void = 0;
 
 protected:
+
     sf::RenderWindow m_window;
     std::unique_ptr<Scene> m_scene{nullptr};
 
     std::string_view m_binName;
     std::vector<std::string_view> m_arguments;
 
+    sf::Font m_defaultFont{};
+
     std::uint32_t m_fps{0};
     sf::Time m_deltaTime{};
+    sf::Text m_fps_draw{};
 
     float m_deltaTimeSeconds{0.f};
 
@@ -110,13 +114,12 @@ protected:
     virtual auto processEvent(const sf::Event &event) -> void;
 
 private:
-    sf::Font m_defaultFont{};
     Settings m_settings;
 
     /**
      * @brief Draws the fps counter and delta time.
      */
-    auto drawFps() const -> void;
+    auto drawFps() -> void;
 };
 
 } // namespace Engine

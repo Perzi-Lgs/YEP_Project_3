@@ -20,6 +20,7 @@ auto EpiGameApp::processEvent(const sf::Event &event) -> void
 
 auto EpiGameApp::init() -> void
 {
+    m_fps_draw.setFont(m_defaultFont);
 }
 
 auto EpiGameApp::deinit() -> void
