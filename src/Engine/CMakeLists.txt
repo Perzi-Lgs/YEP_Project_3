@@ -2,6 +2,8 @@ add_library(
         ${PROJECT_NAME}Engine
         ${CMAKE_CURRENT_SOURCE_DIR}/src/Application.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/Engine/Application.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/Engine/Server/Server.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/Server/Server.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/Settings/Settings.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/Engine/Settings/Settings.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/Engine/Utils/Platform.hpp

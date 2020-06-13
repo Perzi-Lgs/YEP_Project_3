@@ -30,3 +30,26 @@
 *.exe
 *.out
 *.app
+
+# Generated Files
+build
+*.out
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles
+conan*
+!conanfile.txt
+!Documentation/conan
+graph_info.json
+
+src/Detail/Config/Definitions.hpp
+imgui.ini
+
+# IDE configuration folder
+.vscode
+.vs
+
+# Other
+.idea/
+Resources/config.json
+imgui.ini
