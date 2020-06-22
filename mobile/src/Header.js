@@ -20,7 +20,7 @@ const Header = props => {
         onPress={() =>
           isConnect ? setConnectionModal(true) : setConnection(false)
       }>
-        <ScoreText>{`${isConnect ? 'Connection' : 'Déconnection'}`}</ScoreText>
+        <ScoreText>{`${isConnect ? 'Connected' : 'Deconnected'}`}</ScoreText>
         <ButtonConnect isConnect={isConnect} />
       </ConnectionContainer>
 

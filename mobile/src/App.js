@@ -21,7 +21,7 @@ import Game from './Game';
 const App = () => {
   const options = {
     port: 3034, //port 
-    host: '192.168.1.45' // adress ip v4
+    host: '192.168.1.18' // adress ip v4
   };
   const client = TcpSocket.createConnection(options);
   const [timer, setTimer] = useState();
@@ -39,51 +39,51 @@ const App = () => {
     clearInterval(timer);
   };
   const handleOnDirUp = () => {
-    client.write('1');
+    client.write('13');
     console.log('up');
   };
   const handleOnDirUpLong = () => {
     // time a mettre en ms
-    setTimer(setInterval(() => console.log('Long up'), 500));
+    setTimer(setInterval(() => handleOnDirUp(), 100));
   };
   const handleOnDirDown = () => {
-    client.write('3');
+    client.write('15');
     console.log('down');
   };
   const handleOnDirDownLong = () => {
     // time a mettre en ms
-    setTimer(setInterval(() => console.log('Long down'), 500));
+    setTimer(setInterval(() => handleOnDirDown(), 100));
   };
   const handleOnDirLeft = () => {
-    client.write('4');
+    client.write('12');
     console.log('left');
   };
   const handleOnDirLeftLong = () => {
     // time a mettre en ms
-    setTimer(setInterval(() => console.log('Long left'), 500));
+    setTimer(setInterval(() => handleOnDirLeft(), 100));
   };
   const handleOnDirRight = () => {
-    client.write('2');
+    client.write('14');
     console.log('right');
   };
   const handleOnDirRightLong = () => {
     // time a mettre en ms
-    setTimer(setInterval(() => console.log('Long right'), 500));
+    setTimer(setInterval(() => handleOnDirRight(), 100));
   };
   const pressB = () => {
-    client.write('6');
+    client.write('0');
     console.log('B');
   };
   const pressA = () => {
-    client.write('5');
+    client.write('7');
     console.log('A');
   };
   const pressSelect = () => {
-    client.write('7');
+    client.write('1');
     console.log('Select');
   };
   const pressStart = () => {
-    client.write('8');
+    client.write('2');
     console.log('Start');
   };
 
