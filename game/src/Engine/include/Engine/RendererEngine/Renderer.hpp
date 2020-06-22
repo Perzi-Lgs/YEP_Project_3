@@ -13,22 +13,22 @@ namespace Eligos
 
 enum input_keys
 {
-    UNKNOW,
-    Q,
-    W,
-    E,
-    A,
-    S,
-    D,
-    SPACE,
-    DIAG_1,
-    DIAG_2,
-    DIAG_3,
-    DIAG_4,
-    LEFT,
-    UP,
-    RIGHT,
-    DOWN
+    UNKNOW, //0
+    Q,      //1
+    W,      //2
+    E,      //3
+    A,      //4
+    S,      //5
+    D,      //6
+    SPACE,  //7
+    DIAG_1, //8
+    DIAG_2, //9
+    DIAG_3, //10
+    DIAG_4, //11
+    LEFT,   //12
+    UP,     //13
+    RIGHT,  //14
+    DOWN    //15
 };
 
 class RendererAPI

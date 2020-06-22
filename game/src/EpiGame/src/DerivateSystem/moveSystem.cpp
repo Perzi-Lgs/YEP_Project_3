@@ -16,7 +16,7 @@ void moveSystem::update(EventManager &eventManager, std::vector<Entities> &entit
                         for (auto &it : *m_player)
                             if (j->getEntityId() == it->getEntityId())
                             {
-                                std::cout << m_elapsedTime << std::endl;
+                                // std::cout << m_elapsedTime << std::endl;
                                 // std::cout << "cos x" << cos(k->m_Direction) << std::endl;
                                 auto tmp_x = i->x + (j->m_Velocity * (m_elapsedTime / 1000)) * cos(k->m_Direction * M_PI / 180);
                                 auto tmp_y = i->y + (j->m_Velocity * (m_elapsedTime / 1000)) * sin(k->m_Direction * M_PI / 180);

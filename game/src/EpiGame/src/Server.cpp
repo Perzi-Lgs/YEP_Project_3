@@ -69,7 +69,6 @@ void server::handleConnection(int clientSock, int clientNumber)
         std::cout << "Client " << clientNumber << " say: " << buffer << std::endl;
         
         {
-            const std::lock_guard<std::mutex> lock(m_mutex);
             m_queueEvent.push(std::stoi(buffer));
         }
 
