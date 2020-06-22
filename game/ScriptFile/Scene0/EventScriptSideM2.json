@@ -1,0 +1,20 @@
+{
+    "type": "Script",
+    "Code": "plop",
+
+    "Event": {
+        "Timer": 48000,
+        "Entity": {
+            "Code": "Missile",
+            "Number": 5,
+            "Position": [
+                [1900,150],
+                [1900,300],
+                [1900,450],
+                [1900,600],
+                [1900,800]
+            ],
+            "Sprite": "../PNG/Sprites/Missile/Missile_3_Flying_009_rtype.png"
+        }
+    }
+}

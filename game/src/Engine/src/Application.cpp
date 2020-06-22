@@ -17,7 +17,7 @@
 
 using namespace std::chrono_literals;
 
-Engine::Application::Application(int ac, char **av) : m_binName(av[0]), m_arguments{}, m_settings{Settings::fromFile()}
+Engine::Application::Application(int ac, char **av) : m_binName(av[0]), m_arguments{}, m_settings{Settings::fromFile()}, m_server(m_queueEvent, m_mutex)
 
 {
     std::cout << PROJECT_NAME << "\\" << PROJECT_VERSION << '\n' << PROJECT_BUILD_TYPE_AS_STRING << '\n';
@@ -36,7 +36,6 @@ Engine::Application::~Application()
 
 auto Engine::Application::processEvent(const sf::Event &event) -> void
 {
-
     switch (event.type) {
     case sf::Event::EventType::Closed: m_window.close(); break;
     case sf::Event::Resized:

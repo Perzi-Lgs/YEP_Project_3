@@ -1,0 +1,16 @@
+{
+    "type": "Script",
+    "Code": "boss",
+
+    "Event": {
+        "Timer": 35000,
+        "Entity": {
+            "Code": "FINAL",
+            "Number": 1,
+            "Position": [
+                [1900,540]
+            ],
+            "Sprite": "../PNG/Meteors/Meteor_07.png"
+        }
+    }
+}

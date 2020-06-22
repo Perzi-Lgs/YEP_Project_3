@@ -3,7 +3,6 @@ sfml/2.5.1@bincrafters/stable
 nlohmann_json/3.7.3
 
 [options]
-imgui-sfml:shared=False
 sfml:shared=False
 
 sfml:graphics=True

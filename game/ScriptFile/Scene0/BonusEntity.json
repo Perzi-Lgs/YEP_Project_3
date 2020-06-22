@@ -1,0 +1,48 @@
+{
+    "Code": "BonusHeal",
+    "type": "Entity",
+    "Position": {
+        "id": 0,
+        "value": [
+            960,
+            540
+        ]
+    },
+    "Sprite": {
+        "id": 12,
+        "value": "../PNG/Bonus_Items/HP_Bonus.png"
+    },
+    "Drawable": {
+        "id": 2,
+        "value": true
+    },
+    "Playable": {
+        "id": 8,
+        "value": false
+    },
+    "Team": {
+        "id": 18,
+        "value": false
+    },
+    "Hitbox": {
+        "id": 19,
+        "value": [
+            12.5,
+            12.5,
+            12.5,
+            12.5
+        ]
+    },
+    "HeartPoint": {
+        "id": 3,
+        "value": 1
+    },
+    "PowerDamage": {
+        "id": 10,
+        "value": 0
+    },
+    "Bonus": {
+        "id": 5,
+        "value": true
+    }
+}

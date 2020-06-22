@@ -1,0 +1,14 @@
+{
+    "type": "Script",
+    "Code": "TestEvent",
+        
+    "Event1": {
+        "Timer": 5000,
+        "Entity": {
+            "Code": "BonusHeal",
+            "Number": 1,
+            "Position": [[960,540]],
+            "Sprite": "../PNG/Bonus_Items/HP_Bonus.png"
+        }
+    }
+}

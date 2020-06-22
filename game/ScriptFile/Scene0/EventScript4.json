@@ -1,0 +1,20 @@
+{
+    "type": "Script",
+    "Code": "TestEnemies",
+
+    "Event": {
+        "Timer": 13000,
+        "Entity": {
+            "Code": "en7",
+            "Number": 5,
+            "Position": [
+                [1900,200],
+                [1900,350],
+                [1900,500],
+                [1900,650],
+                [1900,850]
+            ],
+            "Sprite": "../PNG/Meteors/Meteor_03.png"
+        }
+    }
+}

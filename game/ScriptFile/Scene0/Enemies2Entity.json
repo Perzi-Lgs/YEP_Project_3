@@ -1,0 +1,52 @@
+{
+    "Code": "en7",
+    "type": "Entity",
+    "Position": {
+        "id": 0,
+        "value": [
+            -200,
+            -200
+        ]
+    },
+    "Sprite": {
+        "id": 12,
+        "value": "../PNG/Meteors/Meteor_03.png"
+    },
+    "Drawable": {
+        "id": 2,
+        "value": true
+    },
+    "Velocity": {
+        "id": 1,
+        "value": 0.5
+    },
+    "Direction": {
+        "id": 4,
+        "value": 180
+    },
+    "Playable": {
+        "id": 8,
+        "value": false
+    },
+    "Team": {
+        "id": 18,
+        "value": false
+    },
+    "Hitbox": {
+        "id": 19,
+        "value": [
+            50,
+            50,
+            50,
+            50
+        ]
+    },
+    "HeartPoint": {
+        "id": 3,
+        "value": 15
+    },
+    "PowerDamage": {
+        "id": 10,
+        "value": 1
+    }
+}

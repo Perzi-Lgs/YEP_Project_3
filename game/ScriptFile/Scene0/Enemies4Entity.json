@@ -1,0 +1,52 @@
+{
+    "Code": "Missile",
+    "type": "Entity",
+    "Position": {
+        "id": 0,
+        "value": [
+            -200,
+            -200
+        ]
+    },
+    "Sprite": {
+        "id": 12,
+        "value": "../PNG/Sprites/Missile/Missile_3_Flying_009_rtype.png"
+    },
+    "Drawable": {
+        "id": 2,
+        "value": true
+    },
+    "Velocity": {
+        "id": 1,
+        "value": 8
+    },
+    "Direction": {
+        "id": 4,
+        "value": 180
+    },
+    "Playable": {
+        "id": 8,
+        "value": false
+    },
+    "Team": {
+        "id": 18,
+        "value": false
+    },
+    "Hitbox": {
+        "id": 19,
+        "value": [
+            73,
+            73,
+            253,
+            253
+        ]
+    },
+    "HeartPoint": {
+        "id": 3,
+        "value": 2
+    },
+    "PowerDamage": {
+        "id": 10,
+        "value": 2
+    }
+}

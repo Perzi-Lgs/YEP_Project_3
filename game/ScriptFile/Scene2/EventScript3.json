@@ -1,0 +1,14 @@
+{
+    "type": "Script",
+    "Code": "changeStage2",
+
+    "Event1": {
+        "Timer": 40000,
+        "Entity": {
+            "Code": "StageEntity",
+            "Number": 1,
+            "Position": [ [0,0] ],
+            "Sprite": "../PNG/Nebula Aqua-Pink.png"
+        }
+    }
+}
